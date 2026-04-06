@@ -44,6 +44,7 @@ What we are currently working on and planning:
 - [ ] **v2.1** - WebServer optimization for displaying real-time player statistics on the web.
 - [ ] **v2.2** - Staking integration (players can lock crypto for X days for a percentage interest).
 - [ ] **v3.0** - P2P Crypto Market (secure direct peer-to-peer crypto transactions offline).
+- [ ] **Web Interface Launch** - The web portal is currently in a testing (beta) phase. Future updates will focus on fully operationalizing the web for public usage.
 - [ ] **Open Source** - Releasing a developer `API` for developers looking to extend bCrypto.
 
 ---
