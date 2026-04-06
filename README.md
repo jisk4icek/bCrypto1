@@ -4,50 +4,65 @@
 ![API](https://img.shields.io/badge/API-1.21-brightgreen)
 ![Status](https://img.shields.io/badge/status-active-success)
 
-Welcome to the official repository for **bCrypto**. This workspace currently serves as our bug tracker, feature request hub, and the central entry point for our project.
+Welcome to the official repository for **bCrypto**. This workspace currently serves as our bug tracker, feature request hub, source code for the Web Interface, and the central entry point for our project.
 
-> **Note:** The bCrypto source code is currently Closed Source. However, we plan to partially or fully release it here in the future. You can find the plugin download link on our SpigotMC Page.
+> **Note:** The bCrypto server plugin is currently Closed Source, however, the Web Interface source code is open and available in this repository! You can find the plugin download link on our SpigotMC Page.
+
+---
+
+## 🌟 Why bCrypto?
+Bring a real-world cryptocurrency market directly to your server! **bCrypto** is a state-of-the-art economy plugin that dynamically fetches real-world crypto prices via live APIs and seamlessly intertwines them with your server's economy. Allow your players to trade, monitor interactive charts, and build their crypto-empire.
+
+### ✨ Core Features
+*   **📈 Real-Time API Data:** Cryptocurrency prices dynamically mirror real-world market shifts.
+*   **🖥️ Premium User Interface (GUI):** A highly polished and customizable menu for tracking portfolios and trading.
+*   **📊 InteractiveBoard Support:** Unique price trend visualizations rendered beautifully directly on maps in-game!
+*   **✨ Live Holograms:** Generate floating texts detailing the current exchange rates that automatically update.
+*   **🌐 Full WebServer Integration:** An interactive web portal for players to track server market data externally.
 
 ---
 
 ## 🐞 Bug Reports & Feature Requests
 
-If you encounter any issues with the WebServer, API Fetcher, or Hologram loading, please let us know by creating a new Issue.
+**GitHub is our sole and primary communication channel.** We do not use Discord. All support, tracking, and feature discussions happen exclusively through GitHub Issues to keep development organized and transparent.
 
-### How to report a bug correctly:
+### How to get support or report a bug:
 1. Navigate to the **Issues** tab.
 2. Check if the same issue has already been reported.
-3. Click `New Issue` and briefly describe the problem.
+3. Click `New Issue` and briefly describe your problem or idea.
 4. Provide the necessary info:
    * Server version (e.g., *Paper 1.21*)
    * bCrypto plugin version
-   * Console logs (Only via Pastebin or similar service; paste errors relating to `cz.basicland.bCrypto`)
+   * Console logs (via Pastebin)
 
 ---
 
-## 📚 Wiki & Documentation
+## 📚 Official Wiki & Documentation
 
-Our documentation contains everything you need to properly set up the plugin, configure Holograms, start the WebServer, and use Placeholders.
+Our technical document contains everything you need to properly set up the plugin, configure holograms, and use Placeholders. Detailed settings are documented in the **[Wiki](WIKI.md)**.
 
 *What you'll find:*
 - Detailed structure of `config.yml` and `messages.yml`
-- How to properly set up `InteractiveBoard` for crypto charts
-- A complete list of all PlaceholderAPI variables (e.g., `%bcrypto_price_btc%`)
+- Web-Server Configuration 
+- Hologram Setup Guide
+- Complete PlaceholderAPI variable list
+
+👉 **[Read the Full Documentation (WIKI.md)](WIKI.md)**
 
 ---
 
 ## 🗺️ Development Roadmap
 
-What we are currently working on and planning:
+We are constantly improving bCrypto. Here is our vision for the near future:
 
-- [x] **v2.0 PRE-RELEASE** - API Fetching refactoring, InteractiveBoard support added.
-- [ ] **v2.1** - WebServer optimization for displaying real-time player statistics on the web.
-- [ ] **v2.2** - Staking integration (players can lock crypto for X days for a percentage interest).
-- [ ] **v3.0** - P2P Crypto Market (secure direct peer-to-peer crypto transactions offline).
-- [ ] **Web Interface Launch** - The web portal is currently in a testing (beta) phase. Future updates will focus on fully operationalizing the web for public usage.
-- [ ] **Open Source** - Releasing a developer `API` for developers looking to extend bCrypto.
+- [x] **v2.0 PRE-RELEASE** - Refactored Live API Fetching, native InteractiveBoard support added.
+- [ ] **Web Interface Launch** - The web portal (source included here) is currently in a beta testing phase. Future updates will focus on fully operationalizing the framework for broad public usage.
+- [ ] **v2.1** - Hardware Wallets (physical in-game items securely storing player's crypto balances).
+- [ ] **v2.2** - Crypto Staking integration (players can lock their assets for X days for a percentage yield).
+- [ ] **v2.3 (New Feature!)** - 🐋 **Crypto Whales Leaderboard** - A globally tracked realtime hologram podium showcasing the top 10 richest crypto holders on the server.
+- [ ] **v3.0** - P2P Crypto Market (secure direct peer-to-peer crypto transactions offline between players).
 
 ---
 
-## 🤝 Support
-If you need immediate setup assistance, join our community Discord. For developer bugs, please open an Issue here.
+## 💻 Web Interface Source Code
+Inside this repository, you will find the `web-interface/` directory. This is the Next.js / React application designed to link directly to your Minecraft Server's bCrypto SQLite/MySQL Database. Anyone is free to explore, host, and modify the web dashboard!
